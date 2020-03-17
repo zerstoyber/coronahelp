@@ -1,6 +1,6 @@
 @font-face {
 font-family: "tiny";
-src: url("font/TerminalGrotesque_JSMODGX.ttf");
+src: url("font/TerminalGrotesque_JSMODGX.ttf") format("truetype-variations");
 font-weight: 400 700;
 }
 
@@ -12,16 +12,6 @@ font-weight: 400 700;
 @keyframes fontweight_out {
   from {font-weight: 400;}
   to {font-weight: 600;}
-}
-
-@keyframes blur_in {
-  from {filter: blur(3px);  -webkit-filter: blur(3px);}
-  to {filter: blur(0px);  -webkit-filter: blur(0px);}
-}
-
-@keyframes blur_out {
-  from {filter: blur(0px);  -webkit-filter: blur(0px);}
-  to {filter: blur(3px);  -webkit-filter: blur(3px);}
 }
 
 @keyframes img_in {
@@ -36,43 +26,58 @@ font-weight: 400 700;
 
 @keyframes colorchange
    {
-     0%   {background: red;}
-     25%  {background: yellow;}
-     50%  {background: blue;}
-     75%  {background: green;}
-     100% {background: red;}
+     0%   {background: #FFC285;}
+     25%  {background: #E96BFF;}
+     50%  {background: #AFFF52;}
+     75%  {background: #5ED8FF;}
+     100% {background: #FFFF85;}
    }
 
    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
    {
-     0%   {background: red;}
-     25%  {background: yellow;}
-     50%  {background: blue;}
-     75%  {background: green;}
-     100% {background: red;}
+     0%   {background: #FFC285;}
+     25%  {background: #E96BFF;}
+     50%  {background: #AFFF52;}
+     75%  {background: #5ED8FF;}
+     100% {background: #FFFF85;}
    }
 
 
 a {
   text-decoration: none;
+  color: black;
 }
 
+a:hover {
+  color: blue;
+}
 
 body {
-  animation: colorchange 100s infinite;
-   -webkit-animation: colorchange 100s infinite;
+
+  padding: 20px;
+  max-width: 700px;
+
+  animation-name: colorchange;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
 
   font-family: tiny, Helvetica, Arial, sans-serif;
   font-size: 1.75em;
   line-height: 1em;
   font-weight: 400;
 
-  padding: 20px;
-  max-width: 700px;
+
 
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none;
 }
 
 h1 {
@@ -97,18 +102,22 @@ h2 {
 }
 
 
-img{
-  margin-top: 100px;
+.bild{
+  margin-top: 0px;
   margin-bottom: 0px;
+
+  mix-blend-mode: multiply;
+
 
   width:100%;
   border-radius: 50%;
-  mix-blend-mode: multiply;
+
   animation-name: img_out;
   animation-duration: 1s;
+
 }
 
-img:hover{
+.bild:hover{
   border-radius: 5%;
   animation-name: img_in;
   animation-duration: 1s;
@@ -128,17 +137,24 @@ p:hover {
   animation-duration: 1s;
 }
 
+.illufont{
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.illufont:hover{
+  font-weight: 400;
+}
+
 .support{
   font-size: 3em;
   text-align: center;
 }
 
-
 .intro_text {
   top: 0;
 }
-
-
 
 
 .platzhalter {
@@ -153,17 +169,12 @@ p:hover {
 
   display: block;
   margin-left: auto;
-  margin-right: auto }
-
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  animation-name: blur_out;
-  animation-duration: 1s;
+  margin-right: auto
 }
 
 .artistblock:hover {
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-  animation-name: blur_in;
-  animation-duration: 1s;
+}
+
+.space {
+  min-height: 150px;
 }
