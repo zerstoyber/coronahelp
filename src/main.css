@@ -220,7 +220,7 @@ html {
 
 
   h1 {
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 25px;
     font-size: 40px;
     font-weight: 400;
@@ -329,11 +329,11 @@ html {
   }
 
   .space {
-    min-height: 50px;
+    min-height: 75px;
   }
 
   .space_klein {
-    min-height: 25px;
+    min-height: 50px;
   }
 
   .lightbold {
