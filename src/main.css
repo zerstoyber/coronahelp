@@ -198,7 +198,7 @@ p:hover {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (hover: none) {
   body {
     background: #FFC285;
 
