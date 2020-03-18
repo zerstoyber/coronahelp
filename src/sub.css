@@ -91,6 +91,12 @@ p {
   font-weight: 400;
 }
 
+.illufont{
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .space {
   min-height: 75px;
 }
@@ -200,6 +206,12 @@ p {
   p:hover {
     font-weight: 400;
     cursor: help;
+  }
+
+  .illufont{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
   }
 
   .illufont{
