@@ -4,16 +4,6 @@ src: url("font/TerminalGrotesque_JSMODGX.ttf") format("truetype-variations");
 font-weight: 400 700;
 }
 
-@keyframes fontweight_in {
-  from {font-weight: 600;}
-  to {font-weight: 400;}
-}
-
-@keyframes fontweight_out {
-  from {font-weight: 400;}
-  to {font-weight: 600;}
-}
-
 @keyframes info {
   0% {font-weight: 600; transform: rotate(5deg);}
   50% {font-weight: 400;transform: rotate(-5deg); }
@@ -73,17 +63,8 @@ h1 {
   margin-top: 0px;
   margin-bottom: 0;
   font-size: 40px;
-  font-weight: 600;
-  line-height: 30px;
-  animation-name: fontweight_out;
-  animation-duration: 1s;
-}
-
-h1:hover {
   font-weight: 400;
-  animation-name: fontweight_in;
-  animation-duration: 1s;
-  cursor: help;
+  line-height: 30px;
 }
 
 .bild{
@@ -95,7 +76,6 @@ h1:hover {
   animation-name: img_out;
   animation-duration: 1s;
   filter: brightness(0%);
-
 }
 
 .bild:hover {
@@ -106,57 +86,9 @@ h1:hover {
   filter: brightness(100%);
 }
 
+
 p {
-  font-weight: 600;
-  animation-name: fontweight_out;
-  animation-duration: 1s;
-}
-
-p:hover {
   font-weight: 400;
-  animation-name: fontweight_in;
-  animation-duration: 1s;
-  cursor: help;
-}
-
-.illufont{
-  font-size: 60px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.illufont:hover{
-  font-weight: 400;
-  cursor: help;
-}
-
-.support{
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-  font-size: 60px;
-  text-align: center;
-}
-
-.info_text {
-  font-size: 19px;
-  line-height: 19px;
-  margin-bottom: 25px;
-}
-
-.platzhalter {
-  background-color: green;
-  padding-right: 50%;
-  padding-left: 200px;
-}
-
-.artistblock {
-  margin-top: 75px;
-  margin-bottom: 0px;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto
 }
 
 .space {
@@ -185,4 +117,12 @@ p:hover {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   background-color: black;
+}
+
+.eng {
+  margin-left: 0px;
+}
+
+.ger {
+  margin-left: 50px;
 }
