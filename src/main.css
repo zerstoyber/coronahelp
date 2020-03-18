@@ -27,13 +27,15 @@ font-weight: 400 700;
 }
 
 @keyframes fontweight_in_mobile {
-  from {font-weight: 420;}
-  to {font-weight: 400;}
+  0% {font-weight: 400;}
+  50% {font-weight: 420;}
+  100% {font-weight: 400;}
 }
 
 @keyframes fontweight_out_mobile {
-  from {font-weight: 400;}
-  to {font-weight: 420;}
+  0% {font-weight: 400;}
+  50% {font-weight: 420;}
+  100% {font-weight: 400;}
 }
 
 @keyframes img_in {
