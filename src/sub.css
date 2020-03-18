@@ -46,13 +46,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  -webkit-touch-callout: none; /* iOS Safari */
-   -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-      -moz-user-select: none; /* Old versions of Firefox */
-       -ms-user-select: none; /* Internet Explorer/Edge */
-           user-select: none;
 }
 
 a {
@@ -75,7 +68,7 @@ h1 {
 .bild{
   margin-top: 20px;
   margin-bottom: 0px;
-  mix-blend-mode: multiply;
+  /*    mix-blend-mode: multiply; */
   width:100%;
   border-radius: 50%;
   animation-name: img_out;
@@ -160,7 +153,7 @@ p {
     padding: 20px;
     max-width: 700px;
 
-    font-family: tiny, Helvetica, Arial, sans-serif;
+    font-family: tiny, tiny_old, Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -168,13 +161,6 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-    -webkit-touch-callout: none; /* iOS Safari */
-     -webkit-user-select: none; /* Safari */
-      -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Old versions of Firefox */
-         -ms-user-select: none; /* Internet Explorer/Edge */
-             user-select: none;
   }
 
   a {
@@ -201,7 +187,7 @@ p {
   .bild{
     margin-top: 20px;
     margin-bottom: 0px;
-    mix-blend-mode: multiply;
+    /*    mix-blend-mode: multiply; */
     width:100%;
     border-radius: 50%;
     animation-name: img_out;
