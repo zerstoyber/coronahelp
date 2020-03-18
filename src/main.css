@@ -1,67 +1,26 @@
-@font-face {
-font-family: "tiny";
-src: url("font/TerminalGrotesque_JSMODGX.ttf") format("truetype-variations");
-font-weight: 400 700;
-}
+/*FONTS*/
+@font-face {font-family: "tiny"; src: url("font/TerminalGrotesque_JSMODGX.ttf") format("truetype-variations"); font-weight: 400 700;}
+@font-face {font-family: "tiny_old"; src: url("font/TerminalGrotesque_JSMOD-Regular.woff");}
 
-@font-face {
-font-family: "tiny_old";
-src: url("font/TerminalGrotesque_JSMOD-Regular.woff");
-}
+/*DESKTOP ANIMATIONS*/
+@keyframes fontweight_in {from {font-weight: 600;} to {font-weight: 400;}}
+@keyframes fontweight_out {from {font-weight: 400;} to {font-weight: 600;}}
 
-@keyframes fontweight_in {
-  from {font-weight: 600;}
-  to {font-weight: 400;}
-}
+@keyframes lightbold_in {from {font-weight: 430;} to {font-weight: 400;}}
+@keyframes lightbold_out {from {font-weight: 400;}to {font-weight: 430;}}
 
-@keyframes fontweight_out {
-  from {font-weight: 400;}
-  to {font-weight: 600;}
-}
+@keyframes info {0% {font-weight: 600; transform: rotate(5deg);} 50% {font-weight: 400;transform: rotate(-5deg); } 100% {font-weight: 600;transform: rotate(5deg);}}
+@keyframes info_hover {0% {font-weight: 450; transform: rotate(7deg);} 50% {font-weight: 400; transform: rotate(0deg);} 100% {font-weight: 450; transform: rotate(7deg);}}
 
-@keyframes info {
-  0% {font-weight: 600; transform: rotate(5deg);}
-  50% {font-weight: 400;transform: rotate(-5deg); }
-  100% {font-weight: 600;transform: rotate(5deg);}
-}
+@keyframes img_in {from {border-radius: 50%; filter:brightness(0%);} to {border-radius: 5%; filter:brightness(100%);}}
+@keyframes img_out {from {border-radius: 5%; filter:brightness(100%);} to {border-radius: 50%; filter:brightness(0%);}}
 
-@keyframes info_hover {
-  0% {font-weight: 450; transform: rotate(7deg);}
-  50% {font-weight: 400; transform: rotate(0deg);}
-  100% {font-weight: 450; transform: rotate(7deg);}
-}
+/*MOBILE ANIMATIONS*/
+@keyframes fontweight_in_mobile {0% {font-weight: 400;} 50% {font-weight: 600;} 100% {font-weight: 400;}}
+@keyframes fontweight_out_mobile {0% {font-weight: 400;} 50% {font-weight: 600;} 100% {font-weight: 400;}}
 
-@keyframes fontweight_in_mobile {
-  0% {font-weight: 400;}
-  50% {font-weight: 410;}
-  100% {font-weight: 400;}
-}
-
-@keyframes fontweight_out_mobile {
-  0% {font-weight: 400;}
-  50% {font-weight: 410;}
-  100% {font-weight: 400;}
-}
-
-@keyframes img_in {
-  from {  border-radius: 50%; filter:brightness(0%);}
-  to {  border-radius: 5%; filter:brightness(100%);}
-}
-
-@keyframes img_out {
-  from {  border-radius: 5%; filter:brightness(100%);}
-  to {  border-radius: 50%; filter:brightness(0%);}
-}
-
-@keyframes img_in_mobile {
-  from {  border-radius: 50%; filter:brightness(100%);}
-  to {  border-radius: 5%; filter:brightness(100%);}
-}
-
-@keyframes img_out_mobile {
-  from {  border-radius: 5%; filter:brightness(100%);}
-  to {  border-radius: 50%; filter:brightness(100%);}
-}
+@keyframes img_in_mobile {from {border-radius: 50%; filter:brightness(100%);} to {border-radius: 5%; filter:brightness(100%);}}
+@keyframes img_out_mobile {from {border-radius: 5%; filter:brightness(100%);} to {  border-radius: 50%; filter:brightness(100%);}}
 
 
 body {
@@ -72,6 +31,7 @@ body {
 
   font-family: tiny, tiny_old, Helvetica, Arial, sans-serif;
   font-size: 30px;
+  text-align: left;
   line-height: 30px;
   font-weight: 400;
 
@@ -90,20 +50,52 @@ a:hover {
 }
 
 h1 {
-  margin-top: 0px;
-  margin-bottom: 0;
+  margin-top: 75px;
+  margin-bottom: 25px;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 30px;
-  animation-name: fontweight_out;
+  animation-name: lightbold_in;
   animation-duration: 1s;
 }
 
 h1:hover {
-  font-weight: 400;
-  animation-name: fontweight_in;
-  animation-duration: 1s;
   cursor: help;
+  font-weight: 430;
+  animation-name: lightbold_out;
+  animation-duration: 1s;
+}
+
+p {
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+p:hover {
+  cursor: help;
+}
+
+.menue {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10;
+  top: 20px;
+  width: auto;
+  position: sticky;
+
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+  box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+}
+
+.menue a {
+  color: white;
 }
 
 .bild{
@@ -126,35 +118,26 @@ h1:hover {
   filter: brightness(100%);
 }
 
-p {
-  font-weight: 600;
-  animation-name: fontweight_out;
-  animation-duration: 1s;
-}
-
-p:hover {
-  font-weight: 400;
-  animation-name: fontweight_in;
-  animation-duration: 1s;
-  cursor: help;
-}
-
 .illufont{
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   text-align: center;
+  animation-name: fontweight_out;
+  animation-duration: 1s;
 }
 
 .illufont:hover{
   font-weight: 400;
   cursor: help;
+  animation-name: fontweight_in;
+  animation-duration: 1s;
 }
 
 .support{
   margin-top: 100px;
   margin-bottom: 100px;
 
-  font-size: 60px;
+  font-size: 30px;
   line-height: 60px;
   text-align: center;
 }
@@ -163,103 +146,133 @@ p:hover {
   font-size: 19px;
   line-height: 19px;
   margin-bottom: 25px;
+  font-weight: 400;
+  animation-name: lightbold_in;
+  animation-duration: 1s;
 }
 
-.platzhalter {
-  background-color: green;
-  padding-right: 50%;
-  padding-left: 200px;
-}
-
-.artistblock {
-  margin-top: 75px;
-  margin-bottom: 0px;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+.info_text:hover {
+  cursor: help;
+  font-weight: 430;
+  animation-name: lightbold_out;
+  animation-duration: 1s;
 }
 
 .space {
   min-height: 75px;
 }
 
-.howto {
-  position: fixed;
-  bottom: 50%;
-  right: 1%;
-  background-color: white;
-  padding: 10px;
-  font-weight: 600;
-  border-radius: 10px;
-  z-index: 10;
-
-  font-weight: 600;
-  animation-name: info;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+.space_klein {
+  min-height: 50px;
 }
 
-.howto:hover {
+.lightbold {
   font-weight: 400;
-  animation-name: info_hover;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  background-color: black;
+  animation-name: lightbold_in;
+  animation-duration: 1s;
 }
+
+.lightbold:hover {
+  font-weight: 430;
+  animation-name: lightbold_out;
+  animation-duration: 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+#moss {
+  max-width: 100% !important;
+}
+
+.anchor {
+  margin-top: -75px;        /* Size of fixed header */
+  padding-bottom: 75px;
+  display: block;
+}
+
+.eng {
+  margin-left: 0px;
+}
+
+.ger {
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media (hover: none) and (pointer: coarse) {
   body {
-    background: #FFC285;
-
-    padding: 20px;
-    max-width: 700px;
-
-    font-family: tiny, tiny_old, Helvetica, Arial, sans-serif;
     font-size: 20px;
+    text-align: left;
     line-height: 20px;
     font-weight: 400;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  a:hover {
-    color: blue;
-  }
 
   h1 {
-    margin-top: 0px;
-    margin-bottom: 0;
+    margin-top: 75px;
+    margin-bottom: 25px;
     font-size: 40px;
     font-weight: 400;
     line-height: 30px;
-    animation-name: fontweight_out_mobile;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
   }
 
   h1:hover {
+    cursor: help;
+    font-weight: 430;
+    animation-name: lightbold_out;
+    animation-duration: 1s;
+  }
+
+  p {
     font-weight: 400;
-    animation-name: fontweight_in_mobile;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    margin-bottom: -10px;
+  }
+
+  p:hover {
+    cursor: help;
+  }
+
+  .menue {
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    top: 20px;
+    width: auto;
+    position: sticky;
+
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+    box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+  }
+
+  .menue a {
+    color: white;
   }
 
   .bild{
     margin-top: 20px;
     margin-bottom: 0px;
-/*    mix-blend-mode: multiply; */
+    /*    mix-blend-mode: multiply; */
     width:100%;
     border-radius: 50%;
-    animation-name: img_out_mobile;
+    animation-name: img_out;
     animation-duration: 1s;
     filter: brightness(100%);
 
@@ -267,20 +280,22 @@ p:hover {
 
   .bild:hover {
     border-radius: 5%;
-    animation-name: img_in_mobile;
+    animation-name: img_in;
     animation-duration: 1s;
     cursor: help;
     filter: brightness(100%);
   }
 
-  p {
-    font-weight: 400;
-    animation-name: fontweight_out_mobile;
+  .illufont{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    animation-name: fontweight_in_mobile;
     animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
-  p:hover {
+  .illufont:hover{
     font-weight: 400;
     cursor: help;
     animation-name: fontweight_in_mobile;
@@ -288,23 +303,12 @@ p:hover {
     animation-iteration-count: infinite;
   }
 
-  .illufont{
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .illufont:hover{
-    font-weight: 400;
-    cursor: help;
-  }
-
   .support{
     margin-top: 100px;
     margin-bottom: 100px;
 
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 60px;
     text-align: center;
   }
 
@@ -312,49 +316,59 @@ p:hover {
     font-size: 19px;
     line-height: 19px;
     margin-bottom: 25px;
+    font-weight: 400;
+    animation-name: lightbold_in;
+    animation-duration: 1s;
   }
 
-  .platzhalter {
-    background-color: green;
-    padding-right: 50%;
-    padding-left: 200px;
-  }
-
-  .artistblock {
-    margin-top: 40px;
-    margin-bottom: 0px;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+  .info_text:hover {
+    cursor: help;
+    font-weight: 430;
+    animation-name: lightbold_out;
+    animation-duration: 1s;
   }
 
   .space {
-    min-height: 20px;
+    min-height: 50px;
   }
 
-  .howto {
-    position: fixed;
-    bottom: 50%;
-    right: 1%;
-    background-color: white;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 10px;
-    z-index: 10;
-
-    font-weight: 400;
-    animation-name: info;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+  .space_klein {
+    min-height: 25px;
   }
 
-  .howto:hover {
+  .lightbold {
     font-weight: 400;
-    animation-name: info_hover;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    background-color: black;
+    animation-name: lightbold_in;
+    animation-duration: 1s;
+  }
+
+  .lightbold:hover {
+    font-weight: 430;
+    animation-name: lightbold_out;
+    animation-duration: 1s;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #moss {
+    max-width: 100% !important;
+  }
+
+  .anchor {
+    margin-top: -75px;        /* Size of fixed header */
+    padding-bottom: 75px;
+    display: block;
+  }
+
+  .eng {
+    margin-left: 0px;
+  }
+
+  .ger {
+    margin-left: 50px;
   }
 }
