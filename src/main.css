@@ -26,6 +26,16 @@ font-weight: 400 700;
   100% {font-weight: 450; transform: rotate(7deg);}
 }
 
+@keyframes fontweight_in_mobile {
+  from {font-weight: 420;}
+  to {font-weight: 400;}
+}
+
+@keyframes fontweight_out_mobile {
+  from {font-weight: 400;}
+  to {font-weight: 420;}
+}
+
 @keyframes img_in {
   from {  border-radius: 50%; filter:brightness(0%);}
   to {  border-radius: 5%; filter:brightness(100%);}
@@ -227,10 +237,16 @@ p:hover {
     font-size: 40px;
     font-weight: 400;
     line-height: 30px;
+    animation-name: fontweight_out_mobile;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
   h1:hover {
     font-weight: 400;
+    animation-name: fontweight_in_mobile;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
   .bild{
@@ -255,12 +271,17 @@ p:hover {
 
   p {
     font-weight: 400;
-
+    animation-name: fontweight_out_mobile;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
   p:hover {
     font-weight: 400;
     cursor: help;
+    animation-name: fontweight_in;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
   .illufont{
