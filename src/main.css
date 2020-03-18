@@ -48,6 +48,16 @@ font-weight: 400 700;
   to {  border-radius: 50%; filter:brightness(0%);}
 }
 
+@keyframes img_in_mobile {
+  from {  border-radius: 50%; filter:brightness(100%);}
+  to {  border-radius: 5%; filter:brightness(100%);}
+}
+
+@keyframes img_out_mobile {
+  from {  border-radius: 5%; filter:brightness(100%);}
+  to {  border-radius: 50%; filter:brightness(100%);}
+}
+
 
 body {
   background: #FFC285;
@@ -257,7 +267,7 @@ p:hover {
     mix-blend-mode: multiply;
     width:100%;
     border-radius: 50%;
-    animation-name: img_out;
+    animation-name: img_out_mobile;
     animation-duration: 1s;
     filter: brightness(100%);
 
@@ -265,7 +275,7 @@ p:hover {
 
   .bild:hover {
     border-radius: 5%;
-    animation-name: img_in;
+    animation-name: img_in_mobile;
     animation-duration: 1s;
     cursor: help;
     filter: brightness(100%);
