@@ -255,14 +255,11 @@ p:hover {
 
   p {
     font-weight: 400;
-    animation-name: fontweight_out;
-    animation-duration: 1s;
+
   }
 
   p:hover {
     font-weight: 400;
-    animation-name: fontweight_in;
-    animation-duration: 1s;
     cursor: help;
   }
 
