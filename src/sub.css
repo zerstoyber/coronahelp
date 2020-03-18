@@ -127,7 +127,7 @@ p {
   margin-left: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media (hover: none) and (pointer: coarse) {
   body {
     background: #FFC285;
 
