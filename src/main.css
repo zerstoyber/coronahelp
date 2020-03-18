@@ -28,13 +28,13 @@ font-weight: 400 700;
 
 @keyframes fontweight_in_mobile {
   0% {font-weight: 400;}
-  50% {font-weight: 420;}
+  50% {font-weight: 410;}
   100% {font-weight: 400;}
 }
 
 @keyframes fontweight_out_mobile {
   0% {font-weight: 400;}
-  50% {font-weight: 420;}
+  50% {font-weight: 410;}
   100% {font-weight: 400;}
 }
 
@@ -240,14 +240,14 @@ p:hover {
     font-weight: 400;
     line-height: 30px;
     animation-name: fontweight_out_mobile;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
   h1:hover {
     font-weight: 400;
     animation-name: fontweight_in_mobile;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
@@ -274,7 +274,7 @@ p:hover {
   p {
     font-weight: 400;
     animation-name: fontweight_out_mobile;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
@@ -282,7 +282,7 @@ p:hover {
     font-weight: 400;
     cursor: help;
     animation-name: fontweight_in_mobile;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
