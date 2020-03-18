@@ -301,7 +301,8 @@ p:hover {
     margin-top: 100px;
     margin-bottom: 100px;
 
-    font-size: 60px;
+    font-size: 40px;
+    line-height: 40px;
     text-align: center;
   }
 
@@ -327,7 +328,7 @@ p:hover {
   }
 
   .space {
-    min-height: 40px;
+    min-height: 20px;
   }
 
   .howto {
