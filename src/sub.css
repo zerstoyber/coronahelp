@@ -234,7 +234,7 @@ p {
   }
 
   .artistblock {
-    margin-top: 75px;
+    margin-top: 40px;
     margin-bottom: 0px;
 
     display: block;
@@ -243,7 +243,7 @@ p {
   }
 
   .space {
-    min-height: 75px;
+    min-height: 40px;
   }
 
   .howto {
@@ -253,7 +253,7 @@ p {
     background-color: white;
     padding: 10px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 10px;
     z-index: 10;
 
