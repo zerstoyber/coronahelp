@@ -198,7 +198,7 @@ p:hover {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
   body {
     background: #FFC285;
 
