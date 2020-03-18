@@ -279,7 +279,7 @@ p:hover {
   p:hover {
     font-weight: 400;
     cursor: help;
-    animation-name: fontweight_in;
+    animation-name: fontweight_in_mobile;
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
