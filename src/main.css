@@ -84,7 +84,7 @@ p:hover {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 3000;
   top: 20px;
   width: auto;
   position: sticky;
@@ -99,15 +99,16 @@ p:hover {
 }
 
 .bild{
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-top: -70px;
+  margin-bottom: -70px;
   /*    mix-blend-mode: multiply; */
   width:100%;
   border-radius: 50%;
   animation-name: img_out;
   animation-duration: 1s;
   filter: brightness(0%);
-
+  position: relative;
+  z-index: 1000;
 }
 
 .bild:hover {
@@ -124,6 +125,8 @@ p:hover {
   text-align: center;
   animation-name: fontweight_out;
   animation-duration: 1s;
+  position: relative;
+  z-index: 2000;
 }
 
 .illufont:hover{
@@ -131,6 +134,10 @@ p:hover {
   cursor: help;
   animation-name: fontweight_in;
   animation-duration: 1s;
+}
+
+.layer {
+  z-index: 2000;
 }
 
 .support{
@@ -202,6 +209,10 @@ html {
   margin-left: 50px;
 }
 
+.blue:hover {
+  color: blue;
+}
+
 
 
 
@@ -256,6 +267,7 @@ html {
     top: 20px;
     width: auto;
     position: sticky;
+    z-index: 3000;
 
     -webkit-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
     -moz-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
@@ -267,15 +279,15 @@ html {
   }
 
   .bild{
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-top: -70px;
+    margin-bottom: -70px;
     /*    mix-blend-mode: multiply; */
     width:100%;
     border-radius: 50%;
     animation-name: img_out;
     animation-duration: 1s;
     filter: brightness(100%);
-
+    z-index: 1000;
   }
 
   .bild:hover {
@@ -293,6 +305,7 @@ html {
     animation-name: fontweight_in_mobile;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    z-index: 2000;  
   }
 
   .illufont:hover{
