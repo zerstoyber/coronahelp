@@ -11,10 +11,10 @@ function setup() {
   var y = elmnt.scrollHeight;
 
   canvas = createCanvas(windowWidth, y);
-//  canvas = createCanvas(windowWidth, windowHeight);
-
   canvas.position(0, 0);
   canvas.style('z-index', '-1')
+
+  console.log('PAINT PAINT PAINT');
 }
 
 function draw() {

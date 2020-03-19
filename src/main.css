@@ -191,12 +191,8 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-#moss {
-  max-width: 100% !important;
-}
-
 .anchor {
-  margin-top: -75px;        /* Size of fixed header */
+  margin-top: -75px;
   padding-bottom: 75px;
   display: block;
 }
@@ -242,7 +238,14 @@ html {
   animation-iteration-count: infinite;
 }
 
-
+#idbody {
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none;
+}
 
 
 
