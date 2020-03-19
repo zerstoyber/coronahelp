@@ -19,8 +19,8 @@
 @keyframes fontweight_in_mobile {0% {font-weight: 400;} 50% {font-weight: 600;} 100% {font-weight: 400;}}
 @keyframes fontweight_out_mobile {0% {font-weight: 400;} 50% {font-weight: 600;} 100% {font-weight: 400;}}
 
-@keyframes img_in_mobile {from {border-radius: 50%; filter:brightness(100%);} to {border-radius: 5%; filter:brightness(100%);}}
-@keyframes img_out_mobile {from {border-radius: 5%; filter:brightness(100%);} to {  border-radius: 50%; filter:brightness(100%);}}
+@keyframes img_in_mobile {0% {border-radius: 50%; filter:brightness(0%);} 50% {border-radius: 5%; filter:brightness(100%);} 100% {border-radius: 50%; filter:brightness(0%);}}
+@keyframes img_out_mobile {0% {border-radius: 50%; filter:brightness(0%);} 50% {border-radius: 5%; filter:brightness(100%);} 100% {border-radius: 50%; filter:brightness(0%);}}
 
 
 body {
