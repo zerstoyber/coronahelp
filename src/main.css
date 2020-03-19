@@ -293,8 +293,8 @@ html {
 
   .bild:hover {
     border-radius: 5%;
-    animation-name: img_in;
-    animation-duration: 1s;
+    animation-name: img_out_mobile;
+    animation-duration: 4s;
     cursor: help;
     filter: brightness(0%);
   }
