@@ -9,8 +9,8 @@
 @keyframes lightbold_in {from {font-weight: 430;} to {font-weight: 400;}}
 @keyframes lightbold_out {from {font-weight: 400;}to {font-weight: 430;}}
 
-@keyframes info {0% {font-weight: 600; transform: rotate(5deg);} 50% {font-weight: 400;transform: rotate(-5deg); } 100% {font-weight: 600;transform: rotate(5deg);}}
-@keyframes info_hover {0% {font-weight: 450; transform: rotate(7deg);} 50% {font-weight: 400; transform: rotate(0deg);} 100% {font-weight: 450; transform: rotate(7deg);}}
+@keyframes info {0% {font-weight: 420; transform: rotate(2deg);} 50% {font-weight: 400;transform: rotate(-2deg); } 100% {font-weight: 420;transform: rotate(2deg);}}
+@keyframes info_hover {0% {font-weight: 420; transform: rotate(2deg);} 50% {font-weight: 400; transform: rotate(0deg);} 100% {font-weight: 420; transform: rotate(2deg);}}
 
 @keyframes img_in {from {border-radius: 50%; filter:brightness(0%);} to {border-radius: 5%; filter:brightness(100%);}}
 @keyframes img_out {from {border-radius: 5%; filter:brightness(100%);} to {border-radius: 50%; filter:brightness(0%);}}
@@ -213,6 +213,34 @@ html {
   color: blue;
 }
 
+
+.watch {
+  position: fixed;
+  bottom: 10px;
+  right: 1%;
+  background-color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 10px;
+  z-index: 4000;
+  max-width: 300px;
+
+  font-weight: 420;
+  color: white;
+
+  animation-name: info;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.watch:hover {
+  font-weight: 400;
+  animation-name: info_hover;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 
 
 
