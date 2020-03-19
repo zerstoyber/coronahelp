@@ -1,2 +1,6 @@
-# Corona Help Dresden
-Site to support Artists from Dresden, Germany. 
+# DRESDEN MUSIC CLUB
+HELP TO OVERCOME CORONA AND SUPPORT AN ENDANGERED SPECIES: MUSICIANS.
+
+PUBLIC URL: COMING TODAY
+
+GITHUB TEST SPACE: https://zerstoyber.github.io/coronahelp/
