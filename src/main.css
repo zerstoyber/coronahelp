@@ -24,7 +24,7 @@
 
 
 body {
-  background: #FFC285;
+  background: #AFFF52;
 
   padding: 20px;
   max-width: 700px;
@@ -89,9 +89,9 @@ p:hover {
   width: auto;
   position: sticky;
 
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
-  -moz-box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
-  box-shadow: 0px 0px 6px 0px rgba(255,194,133,1);
+  -webkit-box-shadow: 0px 0px 6px 0px #AFFF52;
+  -moz-box-shadow: 0px 0px 6px 0px #AFFF52;
+  box-shadow: 0px 0px 6px 0px #AFFF52;
 }
 
 .menue a {
